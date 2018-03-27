@@ -9481,7 +9481,9 @@ p.text {
 }
 
 .slider .slide .buttons-panel {
-  opacity: 1;
+  -webkit-transition: opacity .1s;
+  transition: opacity .1s;
+  opacity: 0;
   width: 76.5%;
   margin: 0 auto;
 }
@@ -9511,6 +9513,10 @@ p.text {
 .slider .slick-current {
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.slider .slick-current .buttons-panel {
+  opacity: 1;
 }
 
 .header-block {
@@ -9932,6 +9938,9 @@ p.text {
   .button-fix {
     margin-top: 100px;
     margin-bottom: 50px;
+  }
+  .slider .slide .main-title {
+    margin-top: -8vw;
   }
   .get_znaq_tokens {
     padding-bottom: 0 !important;
