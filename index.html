@@ -9,7 +9,7 @@
     <title>ZNAQ</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/app.css?v=2">
+    <link rel="stylesheet" href="css/app.css?v=3">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
@@ -19,9 +19,50 @@
 
 </head>
 <body>
+
+<!-- Preloader -->
 <div id="preloader">
     <img src="img/preloader.gif">
 </div>
+
+<!-- Pop-up Analytics-->
+<div class="modal fade" id="ZnaqAnalytics" tabindex="-1" role="dialog" aria-labelledby="ZnaqAnalytics" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h1>Coming Soon</h1>
+                <p><span class="title">ZNAQ Analytics</span> is under development.<br/>
+                    Please <a href="https://exchange.znaq.com/" target="_blank" class="visit">VISIT ZNAQ Exchange</a></p>
+                <a href="https://exchange.znaq.com/" class="btn btn-popup" target="_blank">GO TO ZNAQ EXCHANGE</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Pop-up Cryptex-->
+<div class="modal fade" id="ZnaqCryptex" tabindex="-1" role="dialog" aria-labelledby="ZnaqCryptex" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h1>Coming Soon</h1>
+                <p><span class="title">ZNAQ Cryptex</span> is under development.<br/>
+                    Please <a href="https://exchange.znaq.com/" target="_blank" class="visit">VISIT ZNAQ Exchange</a></p>
+                <a href="https://exchange.znaq.com/" class="btn btn-popup" target="_blank">GO TO ZNAQ EXCHANGE</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="header-block scroll-block" data-section-name="main">
     <div class="header container-fluid">
         <div class="row">
@@ -51,7 +92,7 @@
                         </div>
                         <div class="buttons-panel row">
                             <a data-href="#exchange" class="col-4 anchor">Explore</a>
-                            <a href="https://exchange.znaq.com" class="col-8">Go to znaq Exchange</a>
+                            <a href="https://exchange.znaq.com" class="col-8" target="_blank">Go to znaq Exchange</a>
                         </div>
                     </div>
                     <div class="col-md-10 offset-md-1 col-lg-4 offset-lg-0 img-block">
@@ -69,7 +110,8 @@
 
                         <div class="buttons-panel row">
                             <a data-href="#cryptex" class="col-4 anchor">Explore</a>
-                            <a href="https://cryptex.znaq.com" class="col-8">Go to znaq Cryptex</a>
+                            <!--<a href="https://cryptex.znaq.com" class="col-8" target="_blank">Go to znaq Cryptex</a>-->
+                            <a href="#" class="col-8" data-toggle="modal" data-target="#ZnaqCryptex">Go to znaq Cryptex</a>
                         </div>
                     </div>
                     <div class="col-md-10 offset-md-1 col-lg-4 offset-lg-0 img-block">
@@ -86,7 +128,8 @@
                         </div>
                         <div class="buttons-panel row">
                             <a data-href="#analytics" class="col-4 anchor">Explore</a>
-                            <a href="https://analytics.znaq.com" class="col-8">Go to znaq Analytics</a>
+                            <!--<a href="https://analytics.znaq.com" class="col-8" target="_blank">Go to znaq Analytics</a>-->
+                            <a href="#" class="col-8" data-toggle="modal" data-target="#ZnaqAnalytics">Go to znaq Analytics</a>
                         </div>
                     </div>
                 </div>
@@ -106,7 +149,7 @@
                     <span class="main-title">Exchange</span>
                     <div class="buttons-panel row">
                         <a data-href="#exchange" class="col-4 anchor">Explore</a>
-                        <a href="https://exchange.znaq.com" class="col-8">Go to znaq Exchange</a>
+                        <a href="https://exchange.znaq.com" class="col-8" target="_blank">Go to znaq Exchange</a>
                     </div>
                 </div>
             </div>
@@ -123,7 +166,8 @@
                     <span class="main-title">Cryptex</span>
                     <div class="buttons-panel row">
                         <a data-href="#cryptex" class="col-4 anchor">Explore</a>
-                        <a href="https://cryptex.znaq.com" class="col-8">Go to znaq Cryptex</a>
+                        <!--<a href="https://cryptex.znaq.com" class="col-8" target="_blank">Go to znaq Cryptex</a>-->
+                        <a href="#" class="col-8" data-toggle="modal" data-target="#ZnaqCryptex">Go to znaq Cryptex</a>
                     </div>
                 </div>
             </div>
@@ -140,7 +184,8 @@
                     <span class="main-title">Analytics</span>
                     <div class="buttons-panel row">
                         <a data-href="#analytics" class="col-4 anchor">Explore</a>
-                        <a href="https://analytics.znaq.com" class="col-8">Go to znaq Analytics</a>
+                        <!--<a href="https://analytics.znaq.com" class="col-8" target="_blank">Go to znaq Analytics</a>-->
+                        <a href="#" class="col-8" data-toggle="modal" data-target="#ZnaqAnalytics">Go to znaq Analytics</a>
                     </div>
                 </div>
             </div>
@@ -161,14 +206,14 @@
         </div>
 
         <div class="col-lg-6 col-xl-6 d-none d-lg-block button-fix">
-            <a class="white_button" href="https://znaq.org">
+            <a class="white_button" href="https://znaq.org" target="_blank">
                 Get znaq tokens <img src="img/coin_design-min.png" alt="znaq_coin">
             </a>
         </div>
         <!-- mobile button -->
         <div class="col-12 d-block d-lg-none button-fix-mob">
             <img class="znaq_coin_mob" src="img/coin_design-min.png" alt="znaq_coin">
-            <a class="white_button" href="https://znaq.org">
+            <a class="white_button" href="https://znaq.org" target="_blank">
                 Get znaq tokens
             </a>
         </div>
@@ -193,7 +238,7 @@
                         contract that automatically calculates the transaction price. Create orders right now, or place
                         a positioning order for the future, examine price trends and trade within the United Trading
                         System network with ZNAQ Exchange. </p>
-                    <a href="https://exchange.znaq.com" class="blue_button_big">Go to znaq exchange</a>
+                    <a href="https://exchange.znaq.com" class="blue_button_big" target="_blank">Go to znaq exchange</a>
                 </div>
                 <div class="col-12 col-lg-7 order-1 order-lg-3">
                     <picture>
@@ -238,7 +283,8 @@
                         allows users to trade different cryptocurrency pairs, indices, and other trading products, hence
                         make additional profits on market shifts. Cryptex offers several of its trading products in the
                         form of a Futures Contract, which can be traded by users with a leverage of up to 100x.</p>
-                    <a href="https://cryptex.znaq.com" class="white_button_big">GO TO ZNAQ CRYPTEX</a>
+                    <!--<a href="https://cryptex.znaq.com" class="white_button_big" target="_blank">GO TO ZNAQ CRYPTEX</a>-->
+                    <a href="#" class="white_button_big" data-toggle="modal" data-target="#ZnaqCryptex">GO TO ZNAQ CRYPTEX</a>
                 </div>
             </div>
         </div>
@@ -264,7 +310,8 @@
                         unique platform for assembling and analyzing multi-currency portfolios. With the right use of
                         analytical information, recent news and indicators, every investment decision can be profitable!
                         Always be a step ahead and bring trading to the next level! </p>
-                    <a href="https://analytics.znaq.com" class="blue_button_big align-self-end">GO TO ZNAQ ANALYTICS</a>
+                    <!--<a href="https://analytics.znaq.com" class="blue_button_big align-self-end" target="_blank">GO TO ZNAQ ANALYTICS</a>-->
+                    <a href="#" class="blue_button_big align-self-end" data-toggle="modal" data-target="#ZnaqAnalytics">GO TO ZNAQ ANALYTICS</a>
                 </div>
                 <div class="col-lg-7 col-12 order-lg-2 order-1">
                     <picture>
@@ -288,9 +335,11 @@
         </div>
         <div class="col-lg-5 col-sm-8 col-xl-4 offset-xl-1">
             <div class="row links">
-                <div class="col-sm-4 col-12"><a href="#">EXCHANGE</a></div>
-                <div class="col-sm-4 col-12"><a href="#">CRYPTEX</a></div>
-                <div class="col-sm-4 col-12"><a href="#">ANALYTICS</a></div>
+                <div class="col-sm-4 col-12"><a href="https://exchange.znaq.com" target="_blank">EXCHANGE</a></div>
+                <!--<div class="col-sm-4 col-12"><a href="https://cryptex.znaq.com" target="_blank">CRYPTEX</a></div>-->
+                <div class="col-sm-4 col-12"><a href="#" data-toggle="modal" data-target="#ZnaqCryptex">CRYPTEX</a></div>
+                <!--<div class="col-sm-4 col-12"><a href="https://analytics.znaq.com" target="_blank">ANALYTICS</a></div>-->
+                <div class="col-sm-4 col-12"><a href="#" data-toggle="modal" data-target="#ZnaqAnalytics">ANALYTICS</a></div>
             </div>
         </div>
         <div class="col-lg-5 col-12 social">
@@ -339,5 +388,5 @@
 </div>
 </body>
 
-<script src="js/app.js?v=2"></script>
+<script src="js/app.js?v=3"></script>
 </html>
